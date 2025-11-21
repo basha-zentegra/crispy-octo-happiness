@@ -32,9 +32,9 @@ function Home() {
     <div className='mx-5'>
       
      
-        <section className='d-flex justify-content-evenly' style={{ minHeight: '70vh' }}>
+        <section className='d-flex justify-content-evenly heroSection' style={{ minHeight: '70vh' }}>
             <div className="container-fluid d-flex align-items-center justify-content-center m-5" style={{ width: '50%' }}>
-            <div className='text-start'>
+            <div className='text-center text-md-start'>
                 {fontsLoaded && (
                     <SplitText
                         text="Let’s Build and Grow Together"
@@ -56,7 +56,7 @@ function Home() {
                         Partner with us to take your business to the next level.
                     </p>
                 </div>
-                <div className="d-flex justify-content-start gap-3 mt-5">
+                <div className="d-flex justify-content-start gap-3 mt-5 hero-btns">
                     <Link to="/contact"
                         style={{background: "#546BD6", borderRadius: "6px"}}
                         className="btn btn-techtors btn-lg px-5">
@@ -71,8 +71,8 @@ function Home() {
             </div>
         </div>
 
-        <div style={{ width: '50%',  position: "relative" }} className='container m-5 image-fade-container'>
-            <svg style={{position: "absolute", left: "0", bottom: "0", zIndex: 1, opacity: 0.7 }} width="600" height="400" viewBox="0 0 359 245" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div style={{ width: '50%',  position: "relative" }} className='container m-0 m-md-5 image-fade-container'>
+            <svg className='hero-tic-svg'   viewBox="0 0 359 245" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16.8984 227.927C16.8984 227.927 83.3933 104.832 116.752 109.912C150.112 114.992 129.956 188.776 157.5 187.5C185.044 186.224 244 123 244 123L322.5 33" stroke="url(#paint0_linear_0_1)" stroke-width="33" stroke-linecap="round"/>
                 <path d="M271.538 14.7523C271.538 14.7523 334.193 8.00566 338.95 11.1784C343.707 14.3511 348.374 72.7143 348.374 72.7143" stroke="#4FDF59" stroke-width="20" stroke-linecap="round"/>
                 <defs>

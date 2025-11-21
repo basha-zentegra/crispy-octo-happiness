@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 function HomeAbout() {
   return (
     <div className='container mt-5' style={{height: "100vh", alignContent:"center"}}>
-        <div className='d-flex' >
+        <div className='d-flex ' >
             
             <aside>
                 <h2 className='fw-bold text-techtor mb-4'>Who Are We?</h2>
