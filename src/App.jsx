@@ -379,7 +379,7 @@ function App() {
   return (
     <>
    
-    <BrowserRouter>
+    <BrowserRouter basename="/crispy-octo-happiness">
 
      <Navbar />
       <Routes>
