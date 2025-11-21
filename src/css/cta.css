@@ -1,0 +1,54 @@
+.card-glow {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #fff;
+    border-radius: 20px;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-glow:hover {
+    transform: translateY(-5px);
+    /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); */
+}
+
+.card-glow .card-body {
+    padding: 2rem;
+}
+
+.card-glow .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.card-glow .card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.card-glow .btn-glow {
+    background-color: #fff;
+    color: #ff9a9e;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.card-glow .btn-glow:hover {
+    background-color: #ff9a9e;
+    color: #fff;
+}
+
+/* .hvr-glow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    transition-duration: 0.3s;
+    transition-property: box-shadow;
+} */
+
+.hvr-glow:hover,
+.hvr-glow:focus,
+.hvr-glow:active {
+    /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); */
+}

@@ -293,3 +293,28 @@ button:focus-visible {
 
   background-color: #E0E7FF;
 }
+
+
+/* mega menu  */
+  .dropdown-mega {
+      position: static;
+      right: 50px;
+  }
+  .dropdown-menu.mega-menu {
+    width: 70%;
+    /* border: none; */
+    /* border-radius: 0; */
+    margin-top: 0;
+    /* background-color: #f8f9fa; */
+    left: 50%;
+  transform: translateX(-50%);
+  background-color: #FDFAF0;
+  }
+
+
+  .gradient-wrapper-service {
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #fff5dd, #e8f0ff);
+  display: inline-block;
+}

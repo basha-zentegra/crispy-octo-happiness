@@ -1,0 +1,78 @@
+.big-text-about-us {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 5.5rem;
+  margin-top: 50px;
+  z-index: 10;
+}
+.about-hero{
+    height: 80vh;
+    align-content: center;
+}
+.about-hero > p{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.about-icon{
+    width: min-content;
+    background-color: greenyellow;
+    padding: 10px 15px;
+    font-size: 2rem;
+    border-radius: 20px;
+    color: white;
+}
+
+.dna-divs{
+    /* border: 1px solid grey; */
+    padding: 30px;
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.DNA > div.d-flex{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.DNA{
+    height: 100vh;
+    align-content: center;
+}
+
+.glow{
+
+    position: absolute;
+    top: 0px;
+    left: -20%;
+    width: 500px;
+    height: 500px;
+    aspect-ratio: 1.5;
+    pointer-events: none;
+    z-index: -10;
+    border-radius: 100%;
+    background: linear-gradient(180deg, #64ff61, #0000);
+    filter: blur(15vw);
+    transform: none;
+    opacity: .4;
+}
+
+.glow2{
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 500px;
+    height: 500px;
+    aspect-ratio: 1.5;
+    pointer-events: none;
+    z-index: -10;
+    border-radius: 100%;
+    background: linear-gradient(180deg, #ff6161, #0000);
+    filter: blur(15vw);
+    transform: none;
+    opacity: .3;
+}

@@ -1,0 +1,20 @@
+footer {
+  background-color: #FBFBFB;
+  color: #7A7A7A;
+  padding: 3rem 0;
+  padding-bottom: 0px;
+}
+
+.social-icons a {
+  font-size: 1.25rem;
+  color: #7A7A7A;
+}
+
+.bottom-footer{
+    /* background-color: black; */
+    background-color: #EEEEEE;
+}
+
+li a{
+    color: #7A7A7A;
+}

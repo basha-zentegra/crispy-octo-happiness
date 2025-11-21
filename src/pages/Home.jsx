@@ -9,6 +9,7 @@ import HomeService from '../sections/HomeService'
 import WhyChooseUs from '../sections/WhyChooseUs'
 import HomeAbout from '../sections/HomeAbout'
 import Footer from '../components/Footer'
+import { Link } from 'react-router-dom'
 
 function Home() {
   const [fontsLoaded, setFontsLoaded] = useState(false);
@@ -25,9 +26,11 @@ function Home() {
     console.log('All letters have animated!');
   };
 
+//   console.log(servicesData)
+
   return (
     <div className='mx-5'>
-      <Navbar />
+      
      
         <section className='d-flex justify-content-evenly' style={{ minHeight: '70vh' }}>
             <div className="container-fluid d-flex align-items-center justify-content-center m-5" style={{ width: '50%' }}>
@@ -54,16 +57,16 @@ function Home() {
                     </p>
                 </div>
                 <div className="d-flex justify-content-start gap-3 mt-5">
-                    <button 
+                    <Link to="/contact"
                         style={{background: "#546BD6", borderRadius: "6px"}}
                         className="btn btn-techtors btn-lg px-5">
                         Get Started
-                    </button>
-                    <button 
+                    </Link>
+                    <Link to="/about" 
                         style={{border: "solid 1px #222", borderRadius: "5px"}}
                         className="btn  btn-lg px-4">
                         Learn More
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>
@@ -101,7 +104,7 @@ function Home() {
 
         <div className="free-consultation text-center text-white">
             <h1 className='fw-bold my-3'>Get a Free Consultation</h1>
-            <button style={{color: "white", border: "1px solid white"}} className='btn'>Get Started <i class="bi bi-arrow-right"></i></button>
+            <Link to="/contact" style={{color: "white", border: "1px solid white"}} className='btn'>Get Started <i class="bi bi-arrow-right"></i></Link>
         </div>
         <br />
         <br />

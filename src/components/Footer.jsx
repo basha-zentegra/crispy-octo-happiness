@@ -1,126 +1,83 @@
 import React from 'react';
-import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+// import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+// import { div } from 'framer-motion/client';
+import '../css/footer.css'
+import logo from '../assets/image.png'
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
-      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
-        <div className='me-5 d-none d-lg-block'>
-          <span>Get connected with us on social networks:</span>
-        </div>
+   <>
 
-        <div>
-          <a href='' className='me-4 text-reset'>
-          <i class="bi bi-facebook"></i>
-          </a>
-          <a href='' className='me-4 text-reset'>
-          <i class="bi bi-twitter-x"></i>
-          </a>
-          <a href='' className='me-4 text-reset'>
-          <i class="bi bi-youtube"></i>
-          </a>
-          <a href='' className='me-4 text-reset'>
-          <i class="bi bi-instagram"></i>
-          </a>
-          <a href='' className='me-4 text-reset'>
-          <i class="bi bi-linkedin"></i>
-          </a>
-          <a href='' className='me-4 text-reset'>
-          <i class="bi bi-github"></i>
-          </a>
-        </div>
-      </section>
-
-      <section className=''>
-        <MDBContainer className='text-center text-md-start mt-5'>
-          <MDBRow className='mt-3'>
-            <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>
-               
-                Techtors
-              </h6>
-              <p>
-                Let’s Build and Grow Together
-              </p>
-            </MDBCol>
-
-            <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
-              <p>
-                <a href='#!' className='text-reset'>
-                  React Js
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  CRM
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Begin
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Creator
-                </a>
-              </p>
-             
-            </MDBCol>
-
-            <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
-              <p>
-                <a href='#!' className='text-reset'>
-                  About Us
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Contact Us 
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Services
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  Help
-                </a>
-              </p>
-            </MDBCol>
-
-            <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
-              <p>
-              <i class="bi bi-house-door-fill"></i> New York, NY 10012, US
-                 
-              </p>
-              <p>
-              <i class="bi bi-envelope-fill"></i> info@example.com
-                
-              </p>
-              <p>
-              <i class="bi bi-envelope-fill"></i> + 01 234 567 88
-              </p>
-              <p>
-              <i class="bi bi-printer-fill"></i> + 01 234 567 89
-              </p>
-            </MDBCol>
-          </MDBRow>
-        </MDBContainer>
-      </section>
-
-      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
-       
-      © 2025 Copyright: <a className='text-reset fw-bold' href='https://www.zentegra.com/'>
-          Techtors 
-        </a> 
-        
+<footer className="mt-auto">
+  <div className="container mb-5">
+    <div className="row">
+      <div className="col-md-4 mb-3">
+        <Link to="/" className="pb-5" ><img src={logo} style={{height: "40px"}} alt="" /></Link>
+        <p className='mt-4'>
+         Let’s Build and Grow Together
+        </p>
       </div>
-    </MDBFooter>
+
+      <div className="col-md-4 mb-3">
+        <h5 className='mb-3'>Quick Links</h5>
+        <ul className="list-unstyled">
+          <li className='mb-3'>
+            <Link to="" className="text-decoration-none py-3">
+              Home
+            </Link>
+          </li>
+          <li className='mb-3'>
+            <Link to="/about" className="text-decoration-none py-3">
+              About Us
+            </Link>
+          </li>
+          <li className='mb-3'>
+            <Link to="/contact" className="text-decoration-none py-3">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
+
+      <div className="col-md-4 mb-3">
+        <h5 className='mb-3'>Follow Us</h5>
+        <ul className="list-inline social-icons">
+          <li className="list-inline-item me-5">
+            <a href="#" className="">
+              <i className="bi bi-facebook"></i>
+            </a>
+          </li>
+          <li className="list-inline-item me-5">
+            <a href="#" className="">
+              <i className="bi bi-twitter"></i>
+            </a>
+          </li>
+          <li className="list-inline-item me-5">
+            <a href="#" className="">
+              <i className="bi bi-instagram"></i>
+            </a>
+          </li>
+          <li className="list-inline-item me-5">
+            <a href="https://in.linkedin.com/company/techtors-solutions" target='_blank' className="">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {/* <hr className="mb-4" /> */}
+
+    
+  </div>
+  <div className="mb-0 bottom-footer">
+      <div className=" text-center">
+        <p className='mb-0 p-3 '>&copy; 2025 <strong>Techtors</strong>. All rights reserved.</p>
+      </div>
+    </div>
+</footer>
+
+   </>
   );
 }

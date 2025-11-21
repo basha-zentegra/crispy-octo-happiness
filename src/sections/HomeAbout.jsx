@@ -1,5 +1,6 @@
 import React from 'react'
 import whyChooseUsImg from '../assets/why-choose-us.png'
+import { Link } from 'react-router-dom'
 
 
 function HomeAbout() {
@@ -22,11 +23,11 @@ function HomeAbout() {
                             
                         <p className='lead fw-medium'><span className='py-2 px-4' style={{width: "max-content", backgroundColor: "#F8F8F8", borderRadius: "10px"}}> <strong>Let’s build. Let’s grow. Together.</strong> </span></p>
                     </div>
-                    <button 
+                    <Link to="/about" 
                         style={{background: "#546BD6", borderRadius: "6px"}}
                         className="btn btn-techtors btn-lg px-5 mt-4">
                         Learn more
-                    </button>
+                    </Link>
 
                 </div>
                             
